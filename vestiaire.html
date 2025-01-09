@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appli Vestiaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Appli Vestiaire</h1>
+    <nav>
+      <button id="viewWardrobeBtn">Voir le vestiaire</button>
+      <button id="generateOutfitBtn">Générer un outfit</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="addClothingSection">
+      <h2>Ajouter un vêtement</h2>
+      <form id="addClothingForm">
+        <input type="file" id="clothingImage" accept="image/*" required>
+        <button type="submit">Ajouter au vestiaire</button>
+      </form>
+    </section>
+
+    <section id="wardrobeContainer" class="hidden">
+      <h2>Mon Vestiaire</h2>
+    </section>
+
+    <section id="outfitContainer" class="hidden">
+      <h2>Outfit Généré</h2>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
